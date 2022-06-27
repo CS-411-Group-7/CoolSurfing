@@ -6,18 +6,23 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AfricaPage">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AfricaPage">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
+            <ImageView fitHeight="413.0" fitWidth="608.0">
+               <image>
+                  <Image url="@../../../../Downloads/411/Images/africa.jpg" />
+               </image>
+            </ImageView>
             <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="1.0">
                <image>
                   <Image url="@../../../../Downloads/AfricaMap.jpeg" />
                </image>
             </ImageView>
-            <Button fx:id="backButton" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#goBack" prefHeight="26.0" prefWidth="64.0" text="Back" />
-            <Button fx:id="southAfrica" layoutX="246.0" layoutY="253.0" mnemonicParsing="false" onAction="#goToSouthAfrica" text="South Africa" />
-            <Button fx:id="namibia" layoutX="68.0" layoutY="175.0" mnemonicParsing="false" onAction="#goToNamibia" text="Namibia" />
+            <Button fx:id="backButton" layoutX="8.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" prefHeight="26.0" prefWidth="64.0" text="Back" />
+            <Button fx:id="southAfrica" layoutX="486.0" layoutY="373.0" mnemonicParsing="false" onAction="#goToSouthAfrica" text="South Africa" />
+            <Button fx:id="namibia" layoutX="320.0" layoutY="319.0" mnemonicParsing="false" onAction="#goToNamibia" text="Namibia" />
          </children>
       </AnchorPane>
    </center>

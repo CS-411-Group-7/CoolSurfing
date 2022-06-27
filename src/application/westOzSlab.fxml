@@ -8,17 +8,22 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WestOzSlab">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WestOzSlab">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
+            <ImageView fitHeight="284.0" fitWidth="607.0">
+               <image>
+                  <Image url="@../../../../Downloads/411/Images/westOz.jpg" />
+               </image>
+            </ImageView>
             <ImageView fitHeight="285.0" fitWidth="600.0" layoutY="-2.0">
                <image>
                   <Image url="@../../../../Downloads/WestOzSlabPhoto.jpeg" />
                </image>
             </ImageView>
             <Button fx:id="travel" layoutX="245.0" layoutY="294.0" mnemonicParsing="false" onAction="#travelToWestOzSlab" prefHeight="26.0" prefWidth="74.0" text="Travel" />
-            <Button fx:id="backButton" layoutY="1.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+            <Button fx:id="backButton" layoutX="6.0" layoutY="3.0" mnemonicParsing="false" onAction="#goBack" prefWidth="54.0" text="Back" />
             <Label layoutX="329.0" layoutY="296.0" prefHeight="22.0" prefWidth="271.0" text="Travel Restrictions: None" textFill="#00efff">
                <font>
                   <Font size="14.0" />

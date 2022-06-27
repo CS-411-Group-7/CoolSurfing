@@ -8,17 +8,22 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LimaPage">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LimaPage">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
+            <ImageView fitHeight="287.0" fitWidth="600.0">
+               <image>
+                  <Image url="@../../../../Downloads/411/Images/lima.jpeg" />
+               </image>
+            </ImageView>
             <Button fx:id="travel" layoutX="246.0" layoutY="294.0" mnemonicParsing="false" onAction="#travelToLima" prefHeight="26.0" prefWidth="82.0" text="Travel" />
             <ImageView fitHeight="289.0" fitWidth="600.0" layoutX="-1.0" layoutY="-6.0">
                <image>
                   <Image url="@../../../../Downloads/LimaPhoto.jpeg" />
                </image>
             </ImageView>
-            <Button fx:id="backButton" mnemonicParsing="false" onAction="#goBack" text="Back" />
+            <Button fx:id="backButton" layoutX="2.0" layoutY="1.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
             <Label layoutX="8.0" layoutY="294.0" prefHeight="22.0" prefWidth="246.0" text="Recommended Skill Level: Intermediate" textFill="#00efff">
                <font>
                   <Font size="14.0" />

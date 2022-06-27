@@ -11,10 +11,15 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminToolsPage">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminToolsPage">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
+            <ImageView fitHeight="416.0" fitWidth="626.0">
+               <image>
+                  <Image url="@../../../../Downloads/411/Images/620734.jpg" />
+               </image>
+            </ImageView>
             <Button fx:id="createAccountButton" layoutX="432.0" layoutY="13.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="26.0" prefWidth="79.0" text="Add User " />
             <Button fx:id="addWaveButton" layoutX="418.0" layoutY="307.0" mnemonicParsing="false" onAction="#addWave" prefHeight="26.0" prefWidth="114.0" text="Add Destination" />
             <Label layoutX="260.0" layoutY="41.0" text="Last Name" textFill="#4cdafa">
@@ -65,7 +70,7 @@
                   <Image url="@../../../../Downloads/AdminPhoto.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="backButton" layoutY="1.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+            <Button fx:id="backButton" layoutX="16.0" layoutY="13.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
          </children>
       </AnchorPane>
    </center>

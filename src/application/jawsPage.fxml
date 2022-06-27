@@ -8,17 +8,22 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.JawsPage">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.JawsPage">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
+            <ImageView fitHeight="284.0" fitWidth="600.0">
+               <image>
+                  <Image url="@../../../../Downloads/411/Images/jaws-peahi.jpg" />
+               </image>
+            </ImageView>
             <ImageView fitHeight="283.0" fitWidth="600.0" layoutY="-4.0">
                <image>
                   <Image url="@../../../../Downloads/jawsPhoto.jpeg" />
                </image>
             </ImageView>
             <Button fx:id="travel" layoutX="216.0" layoutY="289.0" mnemonicParsing="false" onAction="#travelToJaws" prefHeight="26.0" prefWidth="109.0" text="Travel " />
-            <Button fx:id="back" mnemonicParsing="false" onAction="#goBack" text="Back" />
+            <Button fx:id="back" layoutX="2.0" layoutY="2.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
             <Label layoutX="14.0" layoutY="291.0" prefHeight="22.0" prefWidth="251.0" text="Recommended Skill Level: Pro" textFill="#00efff">
                <font>
                   <Font size="14.0" />

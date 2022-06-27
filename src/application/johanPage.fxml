@@ -8,17 +8,22 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.JohanPage">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.JohanPage">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="307.0" fitWidth="600.0" layoutX="1.0" layoutY="-6.0">
+            <ImageView fitHeight="300.0" fitWidth="600.0">
+               <image>
+                  <Image url="@../../../../Downloads/411/Images/hokkaido.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="313.0" fitWidth="600.0" layoutX="1.0" layoutY="-6.0">
                <image>
                   <Image url="@../../../../Downloads/ShohanPhoto.jpeg" />
                </image>
             </ImageView>
             <Button fx:id="travel" layoutX="251.0" layoutY="312.0" mnemonicParsing="false" onAction="#travelToJohan" prefHeight="26.0" prefWidth="76.0" text="Travel" />
-            <Button fx:id="backButton" mnemonicParsing="false" onAction="#goBack" text="Back" />
+            <Button fx:id="backButton" layoutX="3.0" layoutY="2.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
             <Label layoutX="7.0" layoutY="314.0" prefHeight="22.0" prefWidth="263.0" text="Recommended Skill Level: Beginner" textFill="#00efff">
                <font>
                   <Font size="14.0" />

@@ -8,17 +8,22 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.JBayPage">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.JBayPage">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
+            <ImageView fitHeight="291.0" fitWidth="606.0">
+               <image>
+                  <Image url="@../../../../Downloads/411/Images/JBayOpen_AlanvanGysen-0478-1560x1040.jpg" />
+               </image>
+            </ImageView>
             <Button fx:id="travel" layoutX="246.0" layoutY="296.0" mnemonicParsing="false" onAction="#travelToJBay" prefHeight="26.0" prefWidth="80.0" text="Travel" />
             <ImageView fitHeight="290.0" fitWidth="608.0" layoutX="-5.0" layoutY="-4.0">
                <image>
                   <Image url="@../../../../Downloads/JBayPhoto.jpeg" />
                </image>
             </ImageView>
-            <Button fx:id="backButton" layoutY="1.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+            <Button fx:id="backButton" layoutX="7.0" layoutY="2.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
             <Label layoutX="7.0" layoutY="298.0" prefHeight="22.0" prefWidth="247.0" text="Recommended Skill Level: Intermediate" textFill="#00efff">
                <font>
                   <Font size="14.0" />

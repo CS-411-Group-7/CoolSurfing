@@ -152,6 +152,7 @@ public class Main extends Application implements Comparable<UserMap> , Comparato
 			Place portugal = new Place(europe, 5, 3, "Portugal");
 			Place antarcticaPlace = new Place(antarctica,4, 2, "Antarctica Wave");
 			Place westOz = new Place(australia, 4, 2, "West Oz");
+			Place peru = new Place(southAmerica, 4, 2, "Peru");
 //		
 //		userMap = WaveUtilities.loadUserMap(); //userMap
 //		waves = WaveUtilities.loadWaveMap();
@@ -180,7 +181,7 @@ public class Main extends Application implements Comparable<UserMap> , Comparato
 		Wave blacksBeach = new Wave(california, "Intermediate", northAmerica, "High Risk", new Condition("Good - Epic", "3"), "Blacks Beach");
 		Wave pipeline = new Wave(hawaii, "Expert", northAmerica, "Moderate Risk", new Condition("Epic", "5"), "Pipeline");
 		Wave jaws = new Wave(hawaii, "Expert", northAmerica, "Moderate Risk", new Condition("Good - Epic", "4"), "Jaws");
-		Wave florionapolis = new Wave(brazil, "Intermediate - Expert", southAmerica, "High Risk", new Condition("Good", "4"), "Florionapolis");
+		//Wave florionapolis = new Wave(brazil, "Intermediate - Expert", southAmerica, "High Risk", new Condition("Good", "4"), "Florionapolis");
 		Wave skeletonBay = new Wave(namibia, "Expert", africa, "Low Risk", new Condition("Epic", "5"), "Skeleton Bay");
 		Wave capeTown = new Wave(southAfrica, "Expert", africa, "Moderate Risk", new Condition("Good - Epic", "4"), "Cape Town");
 		Wave jBay = new Wave(southAfrica, "Expert", africa, "Low Risk", new Condition("Good - Epic", "4"), "J-Bay");
@@ -188,10 +189,15 @@ public class Main extends Application implements Comparable<UserMap> , Comparato
 		Wave nazareth = new Wave(portugal, "Expert", europe, "Moderate Risk", new Condition("Epic", "5"), "Nazareth");
 		Wave antarcticaWave = new Wave(antarcticaPlace, "Intermediate - Expert", antarctica, "Very Low Risk", new Condition("Fair - Good", "2"), "Antarctica Wave");
 		Wave westOzSlab = new Wave(westOz, "Expert", australia, "High Risk", new Condition("Epic", "2"), "West Oz Slab");
+		// new edits start  here 
+		Wave rioDeJaneiro = new Wave(brazil, "Intermediate - Expert", southAmerica, "High Risk", new Condition("Good", "4"), "Rio De Janerio");
+		Wave lima = new Wave(peru, "Intermediate - Expert", southAmerica, "High Risk", new Condition("Good", "4"), "Lima");
+		Wave trujillo = new Wave(peru, "Intermediate - Expert", southAmerica, "High Risk", new Condition("Good", "4"), "Trujillo");
+        
 		
-
-		
-				
+		waves.insert(rioDeJaneiro);
+		waves.insert(lima);
+		waves.insert(trujillo);		
 				
 				
 		waves.insert(ditchPlains);
@@ -200,7 +206,7 @@ public class Main extends Application implements Comparable<UserMap> , Comparato
 		waves.insert(blacksBeach); 
 		waves.insert(pipeline);
 		waves.insert(jaws);
-		waves.insert(florionapolis);
+	//	waves.insert(florionapolis);
 		waves.insert(skeletonBay);
 		waves.insert(capeTown);
 		waves.insert(jBay); 
@@ -208,8 +214,7 @@ public class Main extends Application implements Comparable<UserMap> , Comparato
 		waves.insert(nazareth);
 		waves.insert(antarcticaWave);
 		waves.insert(westOzSlab);
-    
-       
+		
 		
 		
 		

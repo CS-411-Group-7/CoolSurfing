@@ -10,16 +10,21 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UpdateDestination">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UpdateDestination">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
+            <ImageView fitHeight="406.0" fitWidth="600.0">
+               <image>
+                  <Image url="@../../../../Downloads/411/Images/620734.jpg" />
+               </image>
+            </ImageView>
             <ImageView fitHeight="402.0" fitWidth="259.0">
                <image>
                   <Image url="@../../../../Downloads/AdminPhoto.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="backButton" layoutY="1.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+            <Button fx:id="backButton" layoutX="2.0" layoutY="7.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
             <Label layoutX="259.0" layoutY="62.0" text="Name" textFill="#4cdafa">
                <font>
                   <Font name="Songti SC Black" size="23.0" />

@@ -6,17 +6,23 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AsiaPage">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AsiaPage">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
+            <ImageView fitHeight="408.0" fitWidth="610.0" layoutX="161.0" layoutY="6.0">
+               <image>
+                  <Image url="@../../../../Downloads/411/Images/asia.jpg" />
+               </image>
+            </ImageView>
             <ImageView fitHeight="625.0" fitWidth="929.0" layoutX="1.0" layoutY="-210.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../Downloads/asiaMap.jpeg" />
                </image>
             </ImageView>
             <Button fx:id="backButton" layoutX="92.0" layoutY="7.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
-            <Button fx:id="japan" layoutX="607.0" layoutY="77.0" mnemonicParsing="false" onAction="#goToJapan" text="Japan" />
+            <Button fx:id="japan" layoutX="628.0" layoutY="197.0" mnemonicParsing="false" onAction="#goToJapan" text="Japan" />
+            <Button fx:id="backButton1" layoutX="172.0" layoutY="15.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
          </children>
       </AnchorPane>
    </center>

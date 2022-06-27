@@ -8,11 +8,16 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MavericksPage">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MavericksPage">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000;" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="travel" layoutX="249.0" layoutY="286.0" mnemonicParsing="false" onAction="#travelToMavericks" prefHeight="26.0" prefWidth="91.0" text="Travel " />
+            <ImageView fitHeight="281.0" fitWidth="613.0">
+               <image>
+                  <Image url="@../../../../Downloads/411/Images/mavericksPic.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="travel" layoutX="249.0" layoutY="286.0" mnemonicParsing="false" onAction="#travelToMavericks" prefHeight="26.0" prefWidth="91.0" style="-fx-background-color: #00efff;" text="Travel " />
         <!--     <Button fx:id="travel1" layoutX="402.0" layoutY="287.0" mnemonicParsing="false" onAction="#travelToJaws" prefHeight="26.0" prefWidth="114.0" text="View Description" /> -->
             <Label layoutX="16.0" layoutY="288.0" prefHeight="22.0" prefWidth="251.0" text="Recommended Skill Level: Expert" textFill="#00efff">
                <font>
@@ -39,7 +44,7 @@
                   <Image url="@../../../../Downloads/MavericksPhoto.jpeg" />
                </image>
             </ImageView>
-            <Button fx:id="back" layoutX="4.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+            <Button fx:id="back" layoutX="10.0" layoutY="1.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
             <Label layoutX="351.0" layoutY="309.0" prefHeight="22.0" prefWidth="230.0" text="Death Rate(Ages 0-20): less than 1%" textFill="#00efff">
                <font>
                   <Font size="14.0" />

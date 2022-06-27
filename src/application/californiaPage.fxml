@@ -6,18 +6,23 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CaliforniaPage">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CaliforniaPage">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
+            <ImageView fitHeight="400.0" fitWidth="600.0">
+               <image>
+                  <Image url="@../../../../Downloads/411/Images/californiaPic.jpg" />
+               </image>
+            </ImageView>
             <ImageView fitHeight="400.0" fitWidth="600.0">
                <image>
                   <Image url="@../../../../Downloads/CaliforniaMap.jpeg" />
                </image>
             </ImageView>
             <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
-            <Button fx:id="mavericks" layoutX="124.0" layoutY="230.0" mnemonicParsing="false" onAction="#goToMavericks" text="Mavericks" />
-            <Button fx:id="blacksBeach" layoutX="218.0" layoutY="360.0" mnemonicParsing="false" onAction="#goToBlacksBeach" text="Blacks Beach" />
+            <Button fx:id="mavericks" layoutX="22.0" layoutY="174.0" mnemonicParsing="false" onAction="#goToMavericks" text="Mavericks" />
+            <Button fx:id="blacksBeach" layoutX="151.0" layoutY="343.0" mnemonicParsing="false" onAction="#goToBlacksBeach" text="Blacks Beach" />
          </children>
       </AnchorPane>
    </center>

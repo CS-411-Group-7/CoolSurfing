@@ -64,7 +64,7 @@ public class SearchPage implements Initializable {
 		String s = placeBox.getSelectionModel().getSelectedItem().toString();
 		
         if (s.contentEquals("Any")) {
-			WaveMap waveMap = Main.getWaves();
+			WaveMap waveMap = Main.getWaves(); // here is where the wave map gets called 
 			LinkedList<Wave> allWaves = waveMap.returnAllWavesInLinkedListForm();
 			
 			placeMatches = allWaves;
@@ -134,6 +134,12 @@ public class SearchPage implements Initializable {
 			});
 		}
 		
+        if (s.contentEquals("Peru")) {
+			
+			placeMatches = Main.getWaves().searchPredicate((wave) -> {
+				return (wave).getPlace().getName().equals("Peru");
+			});
+        }
 		
 	
 	
@@ -481,8 +487,20 @@ public class SearchPage implements Initializable {
 				
 				}
 				
+				// this is where i started to edit 
+				
+				if(selectedWave.contentEquals("Lima")) {
+					Main m = new Main();
+					m.changeScene( "limaPage.fxml");
+				
+				}
 				
 				
+				if(selectedWave.contentEquals("Trujillo")) {
+					Main m = new Main();
+					m.changeScene( "trujiloPage.fxml");
+				
+				}
 				
 				
 			}

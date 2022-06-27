@@ -6,17 +6,22 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AustraliaPage">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AustraliaPage">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="400.0" fitWidth="600.0">
                <image>
+                  <Image url="@../../../../Downloads/411/Images/australia%20.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="400.0" fitWidth="600.0">
+               <image>
                   <Image url="@../../../../Downloads/australiaMap.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
-            <Button fx:id="westOzSlab" layoutX="68.0" layoutY="188.0" mnemonicParsing="false" onAction="#goToWestOzSlab" text="West Oz" />
+            <Button fx:id="backButton" layoutX="6.0" layoutY="7.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+            <Button fx:id="westOzSlab" layoutX="73.0" layoutY="275.0" mnemonicParsing="false" onAction="#goToWestOzSlab" text="West Oz" />
          </children>
       </AnchorPane>
    </center>

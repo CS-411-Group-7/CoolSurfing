@@ -9,16 +9,21 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TravelToJBay">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TravelToJBay">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
+            <ImageView fitHeight="416.0" fitWidth="600.0">
+               <image>
+                  <Image url="@../../../../Downloads/411/Images/photo-1475706997440-9f2a24435b83.jpg" />
+               </image>
+            </ImageView>
             <ImageView fitHeight="418.0" fitWidth="600.0">
                <image>
                   <Image url="@../../../../Downloads/1580273.jpeg" />
                </image>
             </ImageView>
-            <Button fx:id="backButton" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+            <Button fx:id="backButton" layoutX="2.0" layoutY="12.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
             <DatePicker fx:id="arrive" layoutX="197.0" layoutY="34.0" onAction="#setArrival" promptText="Arrival Date" />
             <DatePicker fx:id="depart" layoutX="197.0" layoutY="79.0" onAction="#setDeparture" promptText="Departure Date" />
             <TextField fx:id="journal" layoutX="196.0" layoutY="260.0" prefHeight="75.0" prefWidth="191.0" promptText="Journal Entry ">

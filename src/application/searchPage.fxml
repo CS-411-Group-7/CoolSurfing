@@ -10,23 +10,28 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SearchPage">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SearchPage">
    <top>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ComboBox fx:id="placeBox" layoutX="56.0" layoutY="93.0" onAction="#searchByPlace" prefHeight="26.0" prefWidth="120.0" promptText="Place" />
+            <ImageView fitHeight="407.0" fitWidth="634.0">
+               <image>
+                  <Image url="@../../../../Downloads/411/Images/130624174959-50-surf-spots-the-box.jpg" />
+               </image>
+            </ImageView>
+            <ComboBox fx:id="placeBox" layoutX="56.0" layoutY="107.0" onAction="#searchByPlace" prefHeight="26.0" prefWidth="120.0" promptText="Place" />
             <ComboBox fx:id="continentBox" layoutX="57.0" layoutY="146.0" onAction="#searchByContinent" prefHeight="26.0" prefWidth="118.0" promptText="Continent" />
-            <ComboBox fx:id="covidRiskLevel" layoutX="59.0" layoutY="200.0" onAction="#searchByRiskLevel" prefHeight="26.0" prefWidth="119.0" promptText="Risk Level" />
-            <ComboBox fx:id="waveGrade" layoutX="59.0" layoutY="255.0" onAction="#searchByWaveGrade" prefHeight="26.0" prefWidth="120.0" promptText="Wave Grade" />
-            <Button fx:id="search" layoutX="91.0" layoutY="307.0" mnemonicParsing="false" onAction="#searchFinal" text="Search" />
-            <ListView fx:id="waveView" layoutX="215.0" layoutY="90.0" prefHeight="243.0" prefWidth="173.0" />
-            <Label layoutX="32.0" layoutY="49.0" text="Select your search filter" textFill="#0ffaff">
+            <ComboBox fx:id="covidRiskLevel" layoutX="59.0" layoutY="187.0" onAction="#searchByRiskLevel" prefHeight="26.0" prefWidth="119.0" promptText="Risk Level" />
+            <ComboBox fx:id="waveGrade" layoutX="59.0" layoutY="228.0" onAction="#searchByWaveGrade" prefHeight="26.0" prefWidth="120.0" promptText="Wave Grade" />
+            <Button fx:id="search" layoutX="91.0" layoutY="268.0" mnemonicParsing="false" onAction="#searchFinal" text="Search" />
+            <ListView fx:id="waveView" layoutX="388.0" layoutY="153.0" prefHeight="94.0" prefWidth="173.0" />
+            <Label layoutX="33.0" layoutY="70.0" text="Select your search filter">
                <font>
-                  <Font name="Apple Chancery" size="17.0" />
+                  <Font name="Times Roman" size="18.0" />
                </font></Label>
-            <Button fx:id="goToWave" layoutX="231.0" layoutY="52.0" mnemonicParsing="false" onMouseClicked="#goToSelectedWave" prefHeight="26.0" prefWidth="141.0" text="Go To Selected Wave" />
-            <Button fx:id="backButton" layoutX="10.0" layoutY="1.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
-            <ImageView fitHeight="410.0" fitWidth="200.0" layoutX="419.0" layoutY="-2.0">
+            <Button fx:id="goToWave" layoutX="404.0" layoutY="268.0" mnemonicParsing="false" onMouseClicked="#goToSelectedWave" prefHeight="26.0" prefWidth="141.0" text="Go To Selected Wave" />
+            <Button fx:id="backButton" layoutX="21.0" layoutY="1.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+            <ImageView fitHeight="410.0" fitWidth="76.0" layoutX="419.0" layoutY="-2.0">
                <image>
                   <Image url="@../../../../Untitled%202.png" />
                </image>

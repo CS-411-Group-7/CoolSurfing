@@ -9,24 +9,29 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TravelToAntarcticaWave">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TravelToAntarcticaWave">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
+            <ImageView fitHeight="411.0" fitWidth="600.0">
+               <image>
+                  <Image url="@../../../../Downloads/411/Images/photo-1475706997440-9f2a24435b83.jpg" />
+               </image>
+            </ImageView>
             <ImageView fitHeight="418.0" fitWidth="600.0" layoutY="-11.0">
                <image>
                   <Image url="@../../../../Downloads/1580273.jpeg" />
                </image>
             </ImageView>
-            <Button fx:id="backButton" layoutX="7.0" layoutY="8.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
-            <TextField fx:id="journal" layoutX="219.0" layoutY="259.0" prefHeight="65.0" prefWidth="188.0" promptText="Journal Entry ">
+            <Button fx:id="backButton" layoutY="8.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+            <TextField fx:id="journal" layoutX="197.0" layoutY="303.0" prefHeight="59.0" prefWidth="188.0" promptText="Journal Entry ">
                <font>
                   <Font size="19.0" />
                </font>
             </TextField>
-            <DatePicker fx:id="arrive" layoutX="210.0" layoutY="20.0" onAction="#setArrival" prefHeight="26.0" prefWidth="198.0" promptText="Arrival Date" />
-            <DatePicker fx:id="depart" layoutX="210.0" layoutY="66.0" onAction="#setDeparture" prefHeight="26.0" prefWidth="200.0" promptText="Departure Date" />
-            <Button fx:id="add" layoutX="247.0" layoutY="339.0" mnemonicParsing="false" onAction="#addToTravelHistory" text="Add To Travel History" />
+            <DatePicker fx:id="arrive" layoutX="192.0" layoutY="21.0" onAction="#setArrival" prefHeight="26.0" prefWidth="198.0" promptText="Arrival Date" />
+            <DatePicker fx:id="depart" layoutX="191.0" layoutY="60.0" onAction="#setDeparture" prefHeight="26.0" prefWidth="200.0" promptText="Departure Date" />
+            <Button fx:id="add" layoutX="218.0" layoutY="371.0" mnemonicParsing="false" onAction="#addToTravelHistory" text="Add to you wave journal" />
          </children>
       </AnchorPane>
    </center>

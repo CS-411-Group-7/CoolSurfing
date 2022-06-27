@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BossTools">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BossTools">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
@@ -26,7 +26,11 @@
                </image>
             </ImageView>
             <Button fx:id="adminTools" layoutX="4.0" layoutY="119.0" mnemonicParsing="false" onAction="#goToAdminTools" style="-fx-background-color: #4cdafa#4cdafa;" text="Admin Tools" />
-            <Button layoutX="514.0" layoutY="121.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="85.0" style="-fx-background-color: #4cdafa#4cdafa;" text="Random" />
+            <ImageView fitHeight="310.0" fitWidth="600.0" layoutX="3.0" layoutY="178.0">
+               <image>
+                  <Image url="@../../../../Downloads/411/Images/bossToolsPic.jpg" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </center>

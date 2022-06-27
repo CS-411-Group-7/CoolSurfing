@@ -8,10 +8,15 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PipelinePage">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PipelinePage">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
+            <ImageView fitHeight="283.0" fitWidth="600.0" layoutX="120.0">
+               <image>
+                  <Image url="@../../../../Downloads/411/Images/pipelinePic.jpg" />
+               </image>
+            </ImageView>
             <Button layoutX="2.0" layoutY="1.0" mnemonicParsing="false" text="Back" textFill="#0eebff" />
             <Label layoutX="130.0" layoutY="289.0" prefHeight="22.0" prefWidth="251.0" text="Recommended Skill Level: Pro" textFill="#00efff">
                <font>
@@ -39,7 +44,7 @@
                </image>
             </ImageView>
             <Button fx:id="travel" layoutX="360.0" layoutY="287.0" mnemonicParsing="false" onAction="#travelToPipeline" prefHeight="26.0" prefWidth="91.0" text="Travel " />
-            <Button fx:id="back" layoutX="120.0" layoutY="1.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+            <Button fx:id="back" layoutX="123.0" layoutY="1.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
             <Label layoutX="132.0" layoutY="358.0" prefHeight="22.0" prefWidth="290.0" text="Best Time to Travel: December - March" textFill="#00efff">
                <font>
                   <Font size="14.0" />

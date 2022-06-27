@@ -8,10 +8,15 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DitchPlainsPage">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DitchPlainsPage">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
+            <ImageView fitHeight="273.0" fitWidth="608.0">
+               <image>
+                  <Image url="@../../../../Downloads/411/Images/ditchPlainsPic.jpg" />
+               </image>
+            </ImageView>
             <Label layoutX="8.0" layoutY="279.0" prefHeight="22.0" prefWidth="251.0" text="Recommended Skill Level: Expert" textFill="#00efff">
                <font>
                   <Font size="14.0" />
@@ -37,7 +42,7 @@
                   <Image url="@../../../../Downloads/ditchPlains.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="backButton" layoutX="15.0" layoutY="1.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+            <Button fx:id="backButton" layoutX="8.0" layoutY="1.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
             <Label layoutX="10.0" layoutY="351.0" prefHeight="22.0" prefWidth="290.0" text="Best Time to Travel: June - September" textFill="#00efff">
                <font>
                   <Font size="14.0" />

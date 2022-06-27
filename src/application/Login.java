@@ -31,7 +31,8 @@ public class Login {
 	private PasswordField password;
 	
 	public void userLogIn(ActionEvent event) throws IOException {
-		 checkLogin();
+		
+		checkLogin();
 	}
 	
 	public void newUserButton(ActionEvent event) throws IOException {
@@ -44,7 +45,7 @@ public class Login {
 	public void checkLogin() throws IOException {	
 		
 		Main m = new Main();
-		Main n = new Main();
+	//	Main n = new Main();
 		
 		
 		UserMap users = Main.getUserMap();
@@ -57,7 +58,7 @@ public class Login {
 		User match = users.searchString(username.getText());
 			if(match.getPassword().toString().contentEquals(password.getText())) {
 				
-				wrongLogIn.setText("Success!");
+			//	wrongLogIn.setText("Success!");
 				User currentUser = Main.getCurrentUser();
 				currentUser = match;
 				Main.setCurrentUser(currentUser);
